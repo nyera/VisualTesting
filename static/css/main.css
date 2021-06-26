@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Big Shoulders Display:100,200,300,400,500,600,700|Fjalla One:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700|Roboto Condensed:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/* html {
+    overflow-x: hidden;
+     (The reason for commenting this out is that #logo locks)
+} */
+
+body {
+    height: 100vh; 
+    width: 100vw;
+    overflow-x: hidden;
+    background: #F8F8FF; 
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* #top, #bottom, #left, #right {
+	background: white;
+    position: fixed;
+    z-index: +9999;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 3vw;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 3vh;
+		}
+		#top { top: 0; }
+        #bottom { bottom: 0; } */
+
+#hello-there {
+    height: 4vw;
+    width: 100vw;
+}
+        
+#intro {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-top {
+    display: none;
+    font-family: Roboto Condensed;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: black;
+}
+
+.header-letter {
+    font-size: 1.70vw;
+}
+
+#intro-background {
+    display: none;
+    position: relative;
+    background-image: linear-gradient(to right,#6B00D7E6, #FF4500E2 100%);
+    height: 100vh;
+    width: 50vw;
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20vw;
+    animation: fill 1.5s ease forwards 2s;
+    /* --------------------------------------------
+     Leave it like this until you find something better
+     ----------------------------------------------- */
+}
+   
+#logo path:nth-child(1){
+    stroke-dasharray: 536px;
+    stroke-dashoffset: 536px;
+    animation: line-anim 1.5s ease forwards;
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 462px;
+    stroke-dashoffset: 462px;
+    animation: line-anim 1.5s ease forwards 0.1s;
+}
+
+#logo path:nth-child(3){
+    stroke-dasharray: 308px;
+    stroke-dashoffset: 308px;
+    animation: line-anim 1.5s ease forwards 0.2s; 
+}
+
+#logo path:nth-child(4){
+    stroke-dasharray: 308px;
+    stroke-dashoffset: 308px;
+    animation: line-anim 1.5s ease forwards 0.3s; 
+}
+
+#logo path:nth-child(5){
+    stroke-dasharray: 530px;
+    stroke-dashoffset: 530px;
+    animation: line-anim 1.5s ease forwards 0.8s; 
+}
+
+#logo path:nth-child(6){
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: line-anim 1.5s ease forwards 0.5s; 
+}
+
+#logo path:nth-child(7){
+    stroke-dasharray: 536px;
+    stroke-dashoffset: 536px;
+    animation: line-anim 1.5s ease forwards 0.6s; 
+}
+
+#logo path:nth-child(8){
+    stroke-dasharray: 462px;
+    stroke-dashoffset: 462px;
+    animation: line-anim 1.5s ease forwards 0.7s;
+}
+
+#logo path:nth-child(9){
+    stroke-dasharray: 530px;
+    stroke-dashoffset: 530px;
+    animation: line-anim 1.5s ease forwards 0.8s;
+}
+
+#logo path:nth-child(10){
+    stroke-dasharray: 462px;
+    stroke-dashoffset: 462px;
+    animation: line-anim 1.5s ease forwards 0.9s;
+}
+
+#logo path:nth-child(11){
+    stroke-dasharray: 77px;
+    stroke-dashoffset: 77px;
+    animation: filler 1.5s ease forwards 2s;
+}
+
+@keyframes line-anim{
+    to {
+    stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+    fill: transparent; 
+    }
+    to {
+     fill: #202020;   
+    }
+}
+
+@keyframes filler {
+    from {
+    fill: transparent; 
+    }
+    to {
+     fill: red;
+    }
+}
+
+#bio {
+    font-size: 1.5vw;
+    font-weight: 700;
+    position: absolute;
+    font-family: "Roboto";
+    color:#F8F8FF;
+    top: 50%;
+    left: 20%;
+    transform: translate(0%, -50%);
+    height: 15vw;
+    /* --------------------------------------------
+     Leave it like this until you find something better
+     ----------------------------------------------- */
+}
+
+.bio-1, .bio-2, .bio-3, .bio-4 {
+    text-align: left;
+    display: none;
+}
+
+.leader-letter {
+    font-size: 1.70vw;
+}
+
+#intro-parallax {
+    padding: 23vw 0;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    /* watch out, this and .image-1 are doing the same thing */
+}
+
+.image-1{
+    width: 100vw;
+    height: 65vw;
+    background: url("/static/images/photos/alternative.jpg") no-repeat;
+    background-size: cover;
+    background-position: 70% 0% ;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 1.0;
+}
+
+#whoMe {
+    height: 80vw;
+    width: 100vw;
+    background-color: cyan;
+}
+
+#myFocus {
+    /* left: 4vw; */
+    /* text-align: center; */
+    top: 20vw;
+    max-height: 55vw;
+    padding-left: 10vw;
+    padding-right: 5vw;
+    position: relative;
+    background-color: greenyellow;
+}
+
+.focus-line {
+    font-size: 2.7vw;
+    font-family: Roboto;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#mySkills {
+    top: 5vw;
+    width: 55vw;
+    position: relative;
+    /* background-color: #F8F8FF; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* left: 7.5vw; */
+    /* padding-right: 5vw; */
+    /* padding-left: 10px; */
+    background-color: green;
+}
+
+.skills-heading {
+    padding-left: 15px;
+}
+
+.skill-icon {
+    max-width: 10vw;
+    max-height: 11vw;
+}
+
+li.list-inline-item:not(:last-child) {
+    margin-right: 0rem;
+}
+
+.skill-text {
+    margin-bottom: 0vw;
+    font-size: 0vw;
+    visibility: hidden;
+}
+
+#takeThat {
+    background-color: red;
+    /* background-color: #F8F8FF; */
+    height: 60vw;
+    width: 100vw;
+}
+
+.takeThat-image { 
+    width: 70vw;
+    min-height: 40vw;
+    background: url("/static/images/photos/crop.jpg");
+    /* Background-image will have to be re-sized and re-focused */
+    background-size: cover;
+    left: 0vw;
+    position: relative;
+    top: 5vw;
+}
+
+#featuredProjects {
+    top: 0vw;
+    left: 55vw;
+    background-color: #F8F8FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    height: 30vw;
+    width: 37vw;
+}
+
+.featured-line {
+    font-size: 2.7vw;
+    font-family: Roboto;
+    font-weight: 600;
+    white-space: nowrap;
+    padding-left: 7vw;
+}
+
+.featured1 {
+    padding-top: 5vw;
+}
+
+#projects {
+    height: 150vw;
+    width: 100vw;
+    background-color: #F8F8FF;
+}
+
+#sagacity-block {
+    position: relative;
+    top: 25vw;
+    left: 5vw;
+    width: 55vw;
+    height: 40vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: yellow; */
+    background-image: url("/static/images/photos/sagacity-screenshot.png");
+    background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(48, 49, 49);
+}
+
+.project-block:hover .overlay {
+  opacity: .80;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#counter-block {
+    position: relative;
+    top: 20vw;
+    left: 65vw;
+    height: 40vw;
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: green; */
+    background-image: url("/static/images/photos/counter-screenshot.png");
+    background-size: cover;
+}
+
+#jellett-block {
+    position: relative;
+    top: 05vw;
+    left: 10vw;
+    height: 40vw;
+    width: 40vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: red; */
+    background-image: url("/static/images/photos/jellett-screenshot.png");
+    background-size: cover;
+}
+
+#contact {
+    height: 65vw;
+    width: 100vw;
+    background-image: linear-gradient(to right,#6B00D7E6, #FF4500E2 100%);
+}
+#redphone {
+    position: relative;
+    top: 05vw;
+    left: 5vw;
+    height: 55vw;
+    width: 88vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("/static/images/photos/redphone-finally.png");
+    background-size: cover;
+}
+
+/* #purplebox {
+    z-index: -1;
+    position: relative;
+    top: 10vw;
+    left: 45vw;
+    height: 40vw;
+    width: 32vw;
+    background-image: yellow;
+    background-size: cover;
+} */
+
+#purplebox-1 {
+    z-index: +1000;
+    position: relative;
+    top: 10vw;
+    left: 45vw;
+    height: 3vw;
+    width: 22vw;
+    background-image: linear-gradient(to right,rgba(255, 0, 140, 0.100), rgba(255, 68, 0, 0.100) 100%);
+}
+
+#purplebox-2 {
+    z-index: +10;
+    position: relative;
+    top: 13vw;
+    left: 45vw;
+    height: 3vw;
+    width: 22vw;
+    background-image: linear-gradient(to right,rgba(255, 0, 140, 0.150), rgba(255, 68, 0, 0.150) 100%);
+}
+
+#purplebox-3 {
+    z-index: +10;
+    position: relative;
+    top: 16vw;
+    left: 45vw;
+    height: 12.5vw;
+    width: 22vw;
+    background-image: linear-gradient(to right,rgba(255, 0, 140, 0.150), rgba(255, 68, 0, 0.150) 100%);
+}
+
+#purplebutton {
+    z-index: +10;
+    position: relative;
+    top: 19vw;
+    left: 60vw;
+    height: 3vw;
+    width: 7vw;
+    background-image: linear-gradient(to right,rgba(190, 9, 160, 0.999), rgba(255, 0, 0, 0.900)  100%);
+}
