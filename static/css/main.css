@@ -327,7 +327,7 @@ li.list-inline-item:not(:last-child) {
     height: 40vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* background-color: yellow; */
-    background-image: url("");
+    background-image: url("/static/images/photos/project-1.png");
     background-size: cover;
 }
 
@@ -368,7 +368,7 @@ li.list-inline-item:not(:last-child) {
     width: 30vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* background-color: green; */
-    background-image: url("");
+    background-image: url("/static/images/photos/project-2.png");
     background-size: cover;
 }
 
@@ -380,7 +380,7 @@ li.list-inline-item:not(:last-child) {
     width: 40vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* background-color: red; */
-    background-image: url("");
+    background-image: url("/static/images/photos/project-3.png");
     background-size: cover;
 }
 
