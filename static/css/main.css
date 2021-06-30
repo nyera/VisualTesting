@@ -283,7 +283,7 @@ li.list-inline-item:not(:last-child) {
 .takeThat-image { 
     width: 70vw;
     min-height: 40vw;
-    background: url("/static/images/photos/crop.jpg");
+    background: url("/static/images/photos/crop.png");
     /* Background-image will have to be re-sized and re-focused */
     background-size: cover;
     left: 0vw;
